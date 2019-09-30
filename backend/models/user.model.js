@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
+const Schema = mongoose.Schema;// In Mongoose, eveything starts with a schema, each schema maps to a MongoDB collection (<=> table)
 
 const userSchema = new Schema({
     username: {
@@ -12,8 +12,8 @@ const userSchema = new Schema({
     }
 }, {
     timestamps: true,
-});
+}); //Only a single field username with some specs (username)
 
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model('User', userSchema); //  'User' could be anything, just the name we're gonna use
 
-module.exports = User;
+module.exports = User; //export = when requirying file we will get an User object

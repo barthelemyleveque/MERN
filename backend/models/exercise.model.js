@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
+const Schema = mongoose.Schema; // In Mongoose, eveything starts with a schema, each schema maps to a MongoDB collection (<=> table)
 
 const exerciseSchema = new Schema(
     {
@@ -12,7 +12,8 @@ const exerciseSchema = new Schema(
     {
         timestamps: true,
     });
+//we have 4 fields but not as many validations
 
-const Exercise = mongoose.model('Exercise', exerciseSchema);
+const Exercise = mongoose.model('Exercise', exerciseSchema); //could be anything, just the name we're gonna usee
 
-module.exports = Exercise;
+module.exports = Exercise; //when the file is required we get an object

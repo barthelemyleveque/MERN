@@ -12,8 +12,10 @@ const exerciseSchema = new Schema(
     {
         timestamps: true,
     });
-//we have 4 fields but not as many validations
+/* We have 4 fields but not as many validations (timestamps is an argument) */
 
-const Exercise = mongoose.model('Exercise', exerciseSchema); //could be anything, just the name we're gonna usee
+const Exercise = mongoose.model('Exercise', exerciseSchema); 
+/* could be anything, just the name we're gonna use */
 
-module.exports = Exercise; //when the file is required we get an object
+module.exports = Exercise; 
+/* when the file is required we get an object */

@@ -12,8 +12,11 @@ const userSchema = new Schema({
     }
 }, {
     timestamps: true,
-}); //Only a single field username with some specs (username)
+}); 
+/* Only a single field username with some specs (username) */
 
-const User = mongoose.model('User', userSchema); //  'User' could be anything, just the name we're gonna use
+const User = mongoose.model('User', userSchema); 
+/*  'User' could be anything, just the name we're gonna use */
 
-module.exports = User; //export = when requirying file we will get an User object
+module.exports = User; 
+/* export = when requirying file we will get an User object */
